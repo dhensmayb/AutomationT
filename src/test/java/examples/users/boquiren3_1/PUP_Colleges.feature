@@ -1,5 +1,5 @@
 @smoke
-Feature: PUP_Website_Colleges
+Feature: PUP_Website_Courses
 
   Scenario Outline: Courses in PUP Website <name>
     Given def step0 = 'Using Chrome as browser'
