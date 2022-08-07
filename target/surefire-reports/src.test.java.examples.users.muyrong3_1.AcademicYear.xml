@@ -1,0 +1,16 @@
+<testsuite failures="0" name="src/test/java/examples/users/muyrong3_1/AcademicYear.feature" skipped="0" tests="1" time="22.383868">
+  <testcase classname="src.test.java.examples.users.muyrong3_1.AcademicYear" name="View PUP Academic Year 2022-2023 - Downloads for Faculty and Employees" time="22.383868">
+    <system-out>Given def step0 = 'Using Chrome as a browser' ............................. passed
+* configure driver = {type:'chromedriver', executable: 'C:/Program Files/Google/Chrome/Application/chromedriver.exe'} . passed
+And def step1 = 'Browser navigates to PUP search website' ................. passed
+* driver 'https://www.pup.edu.ph' ......................................... passed
+And def step2 = 'Maximize Browser' ........................................ passed
+* maximize() .............................................................. passed
+And def step3 = 'User click services modal' ............................... passed
+* click('.services-widget') ............................................... passed
+And def step4 = 'User click Faculty Member or Employee button' ............ passed
+* click('{^a}Faculty Member or Employee') ................................. passed
+And click('{a}View Academic Year 2022-2023') .............................. passed
+Then waitForUrl('https://www.pup.edu.ph/about/calendar') .................. passed</system-out>
+  </testcase>
+</testsuite>

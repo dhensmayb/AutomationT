@@ -1,0 +1,18 @@
+<testsuite failures="1" name="src/test/java/examples/users/boquiren3_1/Feature1.feature" skipped="0" tests="1" time="17.329643">
+  <testcase classname="src.test.java.examples.users.boquiren3_1.Feature1" name="About PUP Website University Profile" time="17.329643">
+    <failure message="Feature1.feature:14 - evaluation (js) failed: waitForUrl('www.pup.edu.ph/history'), waitForUrl: failed after 3 retries and 9002 milliseconds">Given def step0 = 'Using Chrome as browser' ............................... passed
+* configure driver = {type:'chrome', executable: 'C:/Program Files/Google/Chrome/Application/chrome.exe'} . passed
+And def step1 = 'Browser navigates to PUP Website' ........................ passed
+* driver 'https://www.pup.edu.ph/' ........................................ passed
+And def step2 = 'Maximize Browser' ........................................ passed
+* maximize() .............................................................. passed
+And def step3 = 'Click About PUP' ......................................... passed
+* click('{a}About PUP') ................................................... passed
+And click('{a}History') ................................................... passed
+Then waitForUrl('www.pup.edu.ph/history') ................................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Feature1.feature:14 - evaluation (js) failed: waitForUrl('www.pup.edu.ph/history'), waitForUrl: failed after 3 retries and 9002 milliseconds&#13;
+	at ✽.Then waitForUrl('www.pup.edu.ph/history') (Feature1.feature:14)</failure>
+  </testcase>
+</testsuite>

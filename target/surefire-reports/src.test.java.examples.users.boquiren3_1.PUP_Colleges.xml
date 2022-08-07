@@ -1,0 +1,15 @@
+<testsuite failures="0" name="src/test/java/examples/users/boquiren3_1/PUP_Colleges.feature" skipped="0" tests="1" time="12.22418">
+  <testcase classname="src.test.java.examples.users.boquiren3_1.PUP_Colleges" name="Courses in PUP Website Courses in PUP" time="12.22418">
+    <system-out>Given def step0 = 'Using Chrome as browser' ............................... passed
+* configure driver = {type:'chrome', executable: 'C:/Program Files/Google/Chrome/Application/chrome.exe'} . passed
+And def step1 = 'Browser navigates to PUP Website' ........................ passed
+* driver 'https://www.pup.edu.ph/' ........................................ passed
+And def step2 = 'Maximize Browser' ........................................ passed
+* maximize() .............................................................. passed
+And def step3 = 'Click Academic' .......................................... passed
+* click('{a}Academic') .................................................... passed
+And def step4 = 'Click Institute of Technology' ........................... passed
+* click('{a}Institute of Technology') ..................................... passed
+Then waitForUrl('www.pup.edu.ph/itech') ................................... passed</system-out>
+  </testcase>
+</testsuite>

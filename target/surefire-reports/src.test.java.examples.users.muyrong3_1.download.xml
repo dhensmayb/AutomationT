@@ -1,0 +1,20 @@
+<testsuite failures="1" name="src/test/java/examples/users/muyrong3_1/download.feature" skipped="0" tests="1" time="23.942305">
+  <testcase classname="src.test.java.examples.users.muyrong3_1.download" name="View PUP Downloadable Forms - Downloads for Faculty and Employees" time="23.942305">
+    <failure message="download.feature:15 - evaluation (js) failed: waitForUrl('https://www.pup.edu.ph/downloads/employees/'), waitForUrl: failed after 3 retries and 9216 milliseconds">Given def step0 = 'Using Chrome as a browser' ............................. passed
+* configure driver = {type:'chromedriver', executable: 'C:/Program Files/Google/Chrome/Application/chromedriver.exe'} . passed
+And def step1 = 'Browser navigates to PUP search website' ................. passed
+* driver 'https://www.pup.edu.ph' ......................................... passed
+And def step2 = 'Maximize Browser' ........................................ passed
+* maximize() .............................................................. passed
+And def step3 = 'User click services modal' ............................... passed
+* click('.services-widget') ............................................... passed
+And def step4 = 'User click Faculty Member or Employee button' ............ passed
+* click('{^a}Faculty Member or Employee') ................................. passed
+And click('{a}Downloadable Forms') ........................................ passed
+Then waitForUrl('https://www.pup.edu.ph/downloads/employees/') ............ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: download.feature:15 - evaluation (js) failed: waitForUrl('https://www.pup.edu.ph/downloads/employees/'), waitForUrl: failed after 3 retries and 9216 milliseconds&#13;
+	at ✽.Then waitForUrl('https://www.pup.edu.ph/downloads/employees/') (download.feature:15)</failure>
+  </testcase>
+</testsuite>

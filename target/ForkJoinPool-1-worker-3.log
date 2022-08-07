@@ -1,0 +1,6 @@
+15:34:49.268 karate.env system property was:  
+15:34:58.580 waitForUrl - retry #1
+15:09:18.816 waitForUrl - retry #2
+15:09:21.817 waitForUrl - retry #3
+15:09:24.817 waitForUrl: failed after 3 retries and 9002 milliseconds
+
